@@ -1,10 +1,11 @@
+/**GENERAL SETTINGS**/
 
 body {
   font-family: "Nanum Myeongjo", serif;
   margin: 0;
   padding: 0;
-  background-color: #f4f4f4; /* Light background for contrast */
-  color: #333; /* Dark text for readability */
+  background-color: #f4f4f4; 
+  color: #333; 
 }
 
 /**TOP NAVIGATION BAR SETTINGS**/
@@ -42,28 +43,28 @@ body {
   .gallery {
     display: grid;
     grid-template-columns: repeat(auto-fill, minmax(200px, 1fr));
-    gap: 15px; /* Space between images */
-    padding: 20px; /* Padding around the grid */
+    gap: 15px; 
+    padding: 20px; 
 }
 
 figure {
     position: relative;
-    overflow: hidden; /* Hide overflow */
-    border-radius: 10px; /* Rounded corners */
+    overflow: hidden; 
+    border-radius: 10px; 
 }
 
 figure img {
-    width: 100%; /* Responsive images */
-    transition: transform 0.3s ease; /* Smooth transition */
+    width: 100%; 
+    transition: transform 0.3s ease; 
 }
 
 figure img:hover {
-    transform: scale(1.05); /* Scale effect on hover */
+    transform: scale(1.05); 
 }
 
 figcaption {
     text-align: center;
-    font-size: 1em; /* Font size for captions */
+    font-size: 1em; 
 }
 
 .lightbox {
@@ -86,7 +87,7 @@ figcaption {
 
     text-align: center;
     font-family: 'Bree Serif', serif;
-    font-size: 2.5em; /* Larger font size */
+    font-size: 2.5em; 
     padding: 0 20px;
     overflow: hidden;
     
