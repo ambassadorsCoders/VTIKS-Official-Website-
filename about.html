@@ -1,0 +1,83 @@
+<!DOCTYPE html>
+<html lang="eng">
+    <head>
+        <title>VTIKS</title>
+        <meta charset="utf-8">
+        <meta name="viewport" content="width=device-width, initial-scale=1">
+        <link rel="icon" type="image/x-icon" href="Images/Designer.png">
+        <link rel="stylesheet" href="about.css">
+        <link rel="preconnect" href="https://fonts.googleapis.com">
+        <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+        <link href="https://fonts.googleapis.com/css2?family=Bree+Serif&family=Nanum+Myeongjo:wght@400;700;800&family=Noto+Sans+JP:wght@100..900&family=Oswald:wght@200..700&display=swap" rel="stylesheet">
+    </head>
+    <body>
+        <div class="topnav">
+            <div class="hamburger" onclick="toggleMenu()">
+                <div></div>
+                <div></div>
+                <div></div>
+            </div>
+            <a href="index.html">Home</a>
+            <a class="active" href="about.html">About</a>
+            <a href="contact.html">Contact</a>
+            <a href="page4.html">Gallery</a>
+            <a href="page5.html">FAQs</a>
+            <script>  
+
+    function toggleMenu() {
+
+    const topnav = document.querySelector('.topnav');
+    topnav.classList.toggle('active'); // Toggle the active class
+}
+
+            </script>
+        </div>
+        <div class="About">
+            <div class="overlay"></div>
+            <div class="about-content">
+                <h1 id="static-text">Hello!</h1>
+                <script>
+
+                const staticText = document.getElementById('static-text');
+
+                staticText.setAttribute('data-text', staticText.textContent);
+
+                </script>
+                <p class="width">My name is <strong>Vaughn Joseff G. Galura</strong>, and I am a passionate student with a deep love for cinematography and photography. 
+                    I find immense joy in capturing moments and telling stories through the lens of a camera. As I continue my studies, I am eager to explore the art of visual storytelling further, honing my skills in both cinematography and photography. I believe that every frame has the power to evoke emotions and inspire others, and I am excited to share my perspective through my work.</p>
+                <a href="#mission" class="btn">My Mission</a>
+            </div>
+        </div>
+    
+        <div class="section" id="mission">
+            <h2>Mission</h2>
+            <p style="text-align: justify;">As a dedicated student of photography and cinematography, my mission is to harness the power of visual storytelling to 
+            inspire, evoke emotions, and connect people across diverse cultures and experiences. I aim to capture the beauty of the world 
+            through my lens, transforming fleeting moments into lasting memories that resonate with viewers. 
+            I believe that every image and frame has the potential to tell a unique story, and I strive to create work that not only reflects 
+            my artistic vision but also invites others to see the world from new perspectives. 
+            Through continuous learning and exploration, I am committed to mastering the technical and creative aspects of my craft, using my 
+            skills to highlight the extraordinary in the ordinary.</p>
+        </div>
+    
+        <div class="section">
+            <h2>Vision</h2>
+            <p style="text-align: justify;">My vision is to become a transformative visual storyteller who captures the essence of life through the art of photography and cinematography. 
+            I aspire to create compelling narratives that transcend cultural and linguistic barriers, allowing audiences to connect with the emotions and stories 
+            behind each image and frame. I envision visual media as a powerful tool for fostering empathy and understanding among diverse communities. By exploring 
+            themes like identity, nature, and human experiences, I aim to showcase the beauty and complexity of our shared existence. Through innovative techniques 
+            and attention to detail, I seek to push the boundaries of storytelling, blending artistry with technology to create immersive experiences. Ultimately, 
+            my goal is to inspire appreciation for the world and highlight the profound impact that photography and film can have in shaping perspectives and driving change.</p>
+        </div>
+    
+        <div class="section">
+            <h2>Motto</h2>
+            <p>"Capturing Moments, Telling Stories."</p>
+        </div>
+        <div class="footer">
+        <footer style="text-align: center;">
+            <small>@ 2024 Galura, V. All rights reserved</small>
+        </footer>
+    </div>
+        </body>
+        </html>

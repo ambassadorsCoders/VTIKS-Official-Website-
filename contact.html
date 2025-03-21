@@ -1,0 +1,69 @@
+<!DOCTYPE html>
+<html lang="eng">
+    <head>
+        <title>VTIKS</title>
+        <meta charset="utf-8">
+        <meta name="viewport" content="width=device-width, initial-scale=1">
+        <link rel="icon" type="image/x-icon" href="Images/Designer.png">
+        <link rel="stylesheet" href="contact.css">
+        <link rel="preconnect" href="https://fonts.googleapis.com">
+        <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+        <link href="https://fonts.googleapis.com/css2?family=Bree+Serif&family=Nanum+Myeongjo:wght@400;700;800&family=Noto+Sans+JP:wght@100..900&family=Oswald:wght@200..700&display=swap" rel="stylesheet">
+    </head>
+    <body>
+        <div class="topnav">
+            <div class="hamburger" onclick="toggleMenu()">
+                <div></div>
+                <div></div>
+                <div></div>
+            </div>
+            <a href="index.html">Home</a>
+            <a href="about.html">About</a>
+            <a class="active" href="contact.html">Contact</a>
+            <a href="page4.html">Gallery</a>
+            <a href="page5.html">FAQs</a>
+        </div>
+        
+        <div class="contact-container">
+            <h1 id="typewriter"></h1>
+            <p>We'd love to hear from you! Follow us on our social media pages:</p>
+    
+            <div class="social-media">
+                <a href="https://www.facebook.com/VaughnGalura75" target="_blank">
+                    <img src="Images/Facebook_Logo_2023.png" alt="Facebook">
+                </a>
+                <a href="https://www.instagram.com/iguessitsv/" target="_blank">
+                    <img src="Images/Instagram_icon.png" alt="Instagram" />
+                </a>
+            </div>
+            <p>Feel free to send us a message through our social media platforms!</p>
+        </div>
+    </div>
+    <br>
+    <br>
+        <footer style="text-align: center;">
+            <small>@ 2024 Galura, V. All rights reserved</small>
+        </footer>
+    </div>
+    <script>  
+                
+        function toggleMenu() {
+            const topnav = document.querySelector('.topnav');
+            topnav.classList.toggle('active'); // Toggle the active class
+        }
+
+        // Typewriter effect
+    const text = "Connect with Us";
+    let index = 0;
+
+    function typeWriter() {
+        if (index < text.length) {
+            document.getElementById("typewriter").innerHTML += text.charAt(index);
+            index++;
+            setTimeout(typeWriter, 100); // Adjust speed here (100ms)
+        }
+    }
+    window.onload = typeWriter;
+    </script>
+        </body>
+        </html>

@@ -1,0 +1,118 @@
+
+body {
+  font-family: "Nanum Myeongjo", serif;
+  margin: 0;
+  padding: 0;
+  background-color: #f4f4f4; /* Light background for contrast */
+  color: #333; /* Dark text for readability */
+}
+
+/**TOP NAVIGATION BAR SETTINGS**/
+.topnav {
+  display: flex; 
+  justify-content: space-around; 
+  align-items: center; 
+  background-color: #222; 
+  padding: 15px 20px; 
+  box-shadow: 0 2px 10px rgba(0, 0, 0, 0.3); 
+  flex-wrap: wrap; 
+  font-family: "Nanum Myeongjo", serif;
+}
+
+.topnav a {
+  color: #f2f2f2;
+  text-decoration: none;
+  font-size: 16px; 
+  padding: 10px 15px; 
+  transition: background-color 0.3s, color 0.3s, transform 0.2s; 
+  border-radius: 5px; 
+}
+
+.topnav a:hover {
+  background-color: #575757; 
+  color: #ffffff; 
+  transform: scale(1.05); 
+}
+
+.topnav a.active {
+  background-color: #d3a200; 
+  color: white; 
+}
+  /**GALLERY SETTINGS**/
+  .gallery {
+    display: grid;
+    grid-template-columns: repeat(auto-fill, minmax(200px, 1fr));
+    gap: 15px; /* Space between images */
+    padding: 20px; /* Padding around the grid */
+}
+
+figure {
+    position: relative;
+    overflow: hidden; /* Hide overflow */
+    border-radius: 10px; /* Rounded corners */
+}
+
+figure img {
+    width: 100%; /* Responsive images */
+    transition: transform 0.3s ease; /* Smooth transition */
+}
+
+figure img:hover {
+    transform: scale(1.05); /* Scale effect on hover */
+}
+
+figcaption {
+    text-align: center;
+    font-size: 1em; /* Font size for captions */
+}
+
+.lightbox {
+  display: none;
+  position: fixed;
+  top: 0;
+  left: 0;
+  width: 100%;
+  height: 100%;
+  background: rgba(0, 0, 0, 0.8);
+  justify-content: center;
+  align-items: center;
+}
+.lightbox img {
+  max-width: 90%;
+  max-height: 90%;
+}
+
+  h2 {
+
+    text-align: center;
+    font-family: 'Bree Serif', serif;
+    font-size: 2.5em; /* Larger font size */
+    padding: 0 20px;
+    overflow: hidden;
+    
+  }
+
+  p {
+
+    font-family: "Nanum Myeongjo", serif;
+    text-align: center;
+    padding: 0 20px;
+    overflow: hidden;
+
+  }
+
+
+footer {
+  background-color: #222; 
+  color: #f2f2f2; 
+  padding: 20px 0; 
+  text-align: center; 
+  position: relative; 
+}
+
+.footer-content {
+  max-width: 1200px; 
+  margin: 0 auto; 
+  padding: 0 20px; 
+  bottom: 0;
+}

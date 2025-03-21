@@ -1,0 +1,72 @@
+<!DOCTYPE html>
+<html lang="eng">
+    <head>
+        <title>VTIKS</title>
+        <meta charset="utf-8">
+        <meta name="viewport" content="width=device-width, initial-scale=1">
+        <link rel="icon" type="image/x-icon" href="Images/Designer.png">
+        <link rel="stylesheet" href="index.css">
+        <link rel="preconnect" href="https://fonts.googleapis.com">
+        <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+        <link href="https://fonts.googleapis.com/css2?family=Bree+Serif&family=Nanum+Myeongjo:wght@400;700;800&family=Noto+Sans+JP:wght@100..900&family=Oswald:wght@200..700&display=swap" rel="stylesheet">
+    </head>
+    <div class="topnav">
+        <div class="hamburger" onclick="toggleMenu()">
+            <div></div>
+            <div></div>
+            <div></div>
+        </div>
+        <a class="active" href="index.html">Home</a>
+        <a href="about.html">About</a>
+        <a href="contact.html">Contact</a>
+        <a href="page4.html">Gallery</a>
+        <a href="page5.html">FAQs</a>
+    </div>
+    <script>  
+            
+        function toggleMenu() {
+            const topnav = document.querySelector('.topnav');
+            topnav.classList.toggle('active'); // Toggle the active class
+        }
+        
+    </script>
+    <div class="head">
+        <h1 class="static-text" data-text="Welcome to VTIKS Photography">Welcome to VTIKS Photography</h1>
+        <p>Capturing the essence of life through the lens.</p>
+    </div>
+    <div class="description">
+        <blockquote>
+            "Photography isn't just about capturing moments; it's about freezing the emotions, the stories, and the light that made them unforgettable."
+        </blockquote>
+        <p>
+            Photography is not merely about snapping a picture; it’s about capturing the feelings, the little details, and the essence of a moment. When you look at a photo, you're not just seeing an image; you’re remembering everything that made that moment special: the emotions, the setting, the energy. Photography gives us a way to preserve those fleeting bits of life, allowing us to relive those memories as if they’re happening all over again. It's like freezing a piece of your story in time.
+        </p>
+    </div>
+    <div class="content">
+        <h2 id="typed-title"></h2>
+        <img src="Images/VTIKS background.png" alt="Photography">
+        <p>At VITKS Photography, we believe that every moment has a story to tell, and we are dedicated to capturing the essence of life through the lens. Our passion lies in transforming fleeting moments into timeless memories, blending artistry with authenticity. Whether it's a heartfelt celebration, a quiet reflection, or the vibrant pulse of everyday life, our photography aims to encapsulate the beauty and emotion inherent in each scene. Join us on this visual journey, where every click reveals a new perspective and a unique narrative waiting to unfold.</p>
+    </div>
+    <br>
+    <footer>
+        <small>&copy; 2024 Galura, V. All rights reserved</small>
+    </footer>
+    <script>
+        const title = "INTRODUCTION";
+        const typedTitleElement = document.getElementById("typed-title");
+        let index = 0;
+    
+        function type() {
+            if (index < title.length) {
+                typedTitleElement.textContent += title.charAt(index);
+                index++;
+                setTimeout(type, 150); 
+            } else {
+                typedTitleElement.style.borderRight = 'none'; 
+            }
+        }
+    
+        document.addEventListener("DOMContentLoaded", type);
+    </script>
+</body>
+</html>
