@@ -4,7 +4,7 @@ html, body {
   margin: 0;
   padding: 0;
   background-color: #f4f4f4; 
-  background: url('Images/Book.JPG') no-repeat center center fixed;
+  background: url('Book.JPG') no-repeat center center fixed;
   background-size: cover;
   color: #333; 
   display: flex; 
