@@ -14,7 +14,7 @@ body, html {
 }
 
 .About {
-  background-image: url('Images/About.png'); 
+  background-image: url('About.jpg'); 
   height: 100vh;
   background-position: center;
   background-repeat: no-repeat;
@@ -40,8 +40,8 @@ body, html {
 
 h1 {
   font-size: 4em;
-  color: #fff; /* White text color */
-  font-family: 'Courier New', Courier, monospace; /* Monospace font for a retro look */
+  color: #fff; 
+  font-family: 'Courier New', Courier, monospace; 
   position: relative;
   overflow: hidden;
   text-shadow: 
