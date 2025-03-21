@@ -1,9 +1,9 @@
-/* General Styles */
+/**GENERAL SETTINGS**/
 body {
   margin: 0;
   padding: 0;
-  background-color: #f4f4f4; /* Light background for contrast */
-  color: #333; /* Dark text for readability */
+  background-color: #f4f4f4; 
+  color: #333; 
 }
 
 /**TOP NAVIGATION BAR SETTINGS**/
